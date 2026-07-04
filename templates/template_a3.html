@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="style_a3.css">
+</head>
+<body>
+<section class="page">
+  <div class="header">
+    <div class="eyebrow">PFMW A.3 Large-Font Matrix Cockpit - doctor-facing, marker-driven</div>
+    <div class="title">PFMW A.3 LARGE-FONT MATRIX COCKPIT</div>
+    <div class="subtitle">{{ subtitle }}</div>
+  </div>
+  <div class="topgrid">
+    <div class="info"><div class="label">Primary Region</div><div class="value">{{ primary_region }}</div></div>
+    <div class="info"><div class="label">Main Marker</div><div class="value">{{ main_marker }}</div></div>
+    <div class="info"><div class="label">Lead Lane / Card</div><div class="value">{{ lead_card }}</div></div>
+    <div class="info"><div class="label">Secondary</div><div class="value">{{ secondary }}</div></div>
+    <div class="info"><div class="label">Safety</div><div class="value">{{ safety }}</div></div>
+  </div>
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th class="phasehead">PHASE</th>
+        {% for block in blocks %}<th>{{ block }}</th>{% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for phase in phases %}
+      <tr>
+        <td class="phase">{{ phase.label }}</td>
+        {% for block_id in block_ids %}
+        <td class="cell {% if block_id == 'B7' %}hep{% endif %}">
+          <div><b>DO:</b> {{ phase.cells[block_id].do }}</div>
+          <div><b>DOSE:</b> {{ phase.cells[block_id].dose }}</div>
+          <div><b>TEST:</b> {{ phase.cells[block_id].test }}</div>
+          <div><b>RULE:</b> {{ phase.cells[block_id].rule }}</div>
+        </td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <div class="note">{{ page1_note }}</div>
+  <div class="footer">Page 1</div>
+</section>
+<section class="page">
+  <div class="header">
+    <div class="eyebrow">PFMW A.3 Large-Font Matrix Cockpit - doctor-facing, marker-driven</div>
+    <div class="title">PAGE 2 - TREATMENT PROTOCOL DETAIL</div>
+    <div class="subtitle">{{ page2_subtitle }}</div>
+  </div>
+  <div class="three-col">
+    {% for b in page2_top_boxes %}
+    <div class="box"><h2>{{ b.title }}</h2>{{ b.html }}</div>
+    {% endfor %}
+  </div>
+  <table class="protocol">
+    <thead><tr><th>STEP</th><th>EXACT ACTION</th><th>DOSE</th><th>RE-TEST / DECISION</th></tr></thead>
+    <tbody>
+    {% for row in protocol_rows %}
+      <tr><td class="step">{{ row.step }}</td><td>{{ row.action }}</td><td>{{ row.dose }}</td><td>{{ row.decision }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <div class="two-col">
+    {% for b in page2_bottom_boxes %}
+    <div class="box"><h2>{{ b.title }}</h2>{{ b.html }}</div>
+    {% endfor %}
+  </div>
+  <div class="footer">Page 2</div>
+</section>
+<section class="page">
+  <div class="header">
+    <div class="eyebrow">PFMW A.3 Large-Font Matrix Cockpit - doctor-facing, marker-driven</div>
+    <div class="title">PAGE 3 - CLINICIAN UPGRADE / EXPERT LESSON</div>
+    <div class="subtitle">{{ page3_subtitle }}</div>
+  </div>
+  <div class="two-col">
+    {% for b in page3_top_boxes %}
+    <div class="box"><h2>{{ b.title }}</h2>{{ b.html }}</div>
+    {% endfor %}
+  </div>
+  <table class="lesson">
+    <thead><tr><th>CLINICAL DECISION</th><th>PRACTICAL RULE</th><th>WHY IT MATTERS</th></tr></thead>
+    <tbody>
+    {% for row in lesson_rows %}
+      <tr><td>{{ row.decision }}</td><td>{{ row.rule }}</td><td>{{ row.why }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <div class="script"><b>Patient explanation:</b> {{ patient_script }}</div>
+  <div class="script"><b>Doctor close:</b> {{ doctor_close }}</div>
+  <div class="note">{{ clinical_bottom_line }}</div>
+  <div class="footer">Page 3</div>
+</section>
+</body>
+</html>
