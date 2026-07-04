@@ -16,7 +16,7 @@ import shutil
 from pathlib import Path
 from typing import Any, Dict, List
 
-from jinja2 import Environment, FileSystemLoader, select_autoescape
+from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
 
 PHASES = ["TODAY / RUN", "NEXT / WHEN STABLE", "FUTURE / BUILD CAPACITY"]
@@ -137,7 +137,7 @@ def normalize_case(raw: Dict[str, Any]) -> Dict[str, Any]:
 def render(case_json: Path, out_pdf: Path, keep_html: bool = False) -> Path:
     root = Path(__file__).resolve().parent
     templates = root / "templates"
-    env = Environment(loader=FileSystemLoader(str(templates)), autoescape=select_autoescape())
+    env = Environment(loader=FileSystemLoader(str(templates)), autoescape=False)
     tmpl = env.get_template("template_a3.html")
     raw = json.loads(case_json.read_text(encoding="utf-8"))
     data = normalize_case(raw)
