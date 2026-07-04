@@ -1,0 +1,70 @@
+{
+  "title": "PFMW A.3 Large-Font Matrix Cockpit - Post-MVA Lumbar",
+  "subtitle": "Post-MVA lumbar flexion-intolerant load pattern | Primary marker: forward bend / floor reach",
+  "primary_region": "Lower back / lumbar-pelvis",
+  "main_marker": "Forward bend / reach-to-floor: pain, range, guarding, recovery",
+  "lead_card": "TX LUM 01 - Lumbar Flexion-Intolerant Load Reset",
+  "secondary": "Mid-upper back; left knee feels off with ADLs",
+  "safety": "High-energy MVA. Screen neuro, fracture, knee instability before loading.",
+  "page1_note": "One-lane rule: Low back leads today. Thoracic and knee are monitored unless safety or marker response changes.",
+  "matrix": {
+    "TODAY / RUN": {
+      "B1": {"do":"90/90 or side-lying unload", "dose":"60-120 sec + 4-6 breaths", "test":"Bend marker", "rule":"Must reduce guarding"},
+      "B2": {"do":"Brief TL / glute / QL doorway", "dose":"30-60 sec per target", "test":"Bend once", "rule":"Stop if no marker change"},
+      "B3": {"do":"Low-force TL / thoracic input if earned", "dose":"1-2 targets max", "test":"Same bend", "rule":"No cavitation chasing"},
+      "B4": {"do":"Hip hinge to high target + exhale brace", "dose":"4-6 clean reps", "test":"Reach / STS", "rule":"One cue only"},
+      "B5": {"do":"Hold loading unless marker calms", "dose":"Micro STS only if green", "test":"24-hr response", "rule":"No floor lifts"},
+      "B6": {"do":"Avoid floor bend + >10 lb lifting", "dose":"Short walks if calming", "test":"Less recovery time", "rule":"No spike >2/10"},
+      "B7": {"do":"Diaphragm Breathing + Seated Pelvic Tilts", "dose":"1-2x/day, easy", "test":"Next bend", "rule":"1-2 drills only"}
+    },
+    "NEXT / WHEN STABLE": {
+      "B1": {"do":"Unload only as rescue", "dose":"30-60 sec", "test":"Less need for it", "rule":"Do not live here"},
+      "B2": {"do":"Soft tissue only if it opens hinge", "dose":"60-90 sec total", "test":"Hinge range", "rule":"Doorway, not plan"},
+      "B3": {"do":"Mobility that improves reach", "dose":"One input, retest", "test":"Bend + STS", "rule":"Drop weak inputs"},
+      "B4": {"do":"Sit-to-Stand / Hip Hinge Chair Squats", "dose":"2 x 5-8", "test":"Less guarded rise", "rule":"Same-day easy"},
+      "B5": {"do":"Light STS or raised reach task", "dose":"2 x 6", "test":"24-hr response", "rule":"Progress one variable"},
+      "B6": {"do":"Graded bend to raised surface", "dose":"Tiny, frequent wins", "test":"More range, faster settle", "rule":"No floor yet"},
+      "B7": {"do":"Sit-to-Stand + Hip Hinge Chair Squats", "dose":"4-5x/week", "test":"Bend marker", "rule":"Keep 1-3 total"}
+    },
+    "FUTURE / BUILD CAPACITY": {
+      "B1": {"do":"Unload only for flare plan", "dose":"As needed", "test":"Self-manages", "rule":"Independence"},
+      "B2": {"do":"Manual less often", "dose":"Short tune-up only", "test":"Holds between visits", "rule":"Capacity replaces it"},
+      "B3": {"do":"Mobility if range still limits work", "dose":"Targeted only", "test":"Lift setup", "rule":"No random cleanup"},
+      "B4": {"do":"Hinge under light load", "dose":"2-3 x 6-10", "test":"Raised lift", "rule":"Control before load"},
+      "B5": {"do":"Carries / deadlift pattern / work simulation", "dose":"Gradual", "test":"Lift + ADLs", "rule":"One variable at a time"},
+      "B6": {"do":"Floor reach ladder + work exposure", "dose":"Planned exposure", "test":"Next-day status", "rule":"Earn floor lifts"},
+      "B7": {"do":"Semi-Stiff Dead Lift OR Suitcase Carry", "dose":"2-3x/week", "test":"Work tolerance", "rule":"No flare debt"}
+    }
+  },
+  "page2": {
+    "subtitle": "Lead card: TX LUM 01 | Moderate-high irritability | Safety first",
+    "safety_gate": ["High-energy MVA + heavy vehicle damage", "Screen lumbar neuro: myotomes, sensation, reflexes if indicated", "Ask bowel/bladder, saddle anesthesia, progressive weakness", "Knee: swelling, extension loss, true locking, giving way, inability to bear weight"],
+    "primary_marker": "Forward bend / reach-to-floor tolerance. Record pain /10, range, guarding, recovery time, distal symptom behavior. Use raised-object reach if full bend is too provocative.",
+    "hep": ["Diaphragm Breathing: 4-6 slow breaths, 1-2x/day or flare reset", "Seated Pelvic Tilts: easy range, 1-2x/day", "Add Sit-to-Stand or Hip Hinge Chair Squats once stable"],
+    "protocol_rows": [
+      {"step":"A. Baseline", "action":"Confirm lumbar bending intolerance. Note thoracic and knee as secondary.", "dose":"2 min", "decision":"Re-test bend only once. Do not over-test acute MVA."},
+      {"step":"B1. Unload", "action":"90/90 or side-lying unload. Add slow exhale breathing.", "dose":"60-120 sec", "decision":"Bend marker should feel less guarded or recover faster."},
+      {"step":"B2. Doorway", "action":"Brief TL paraspinals / QL / glute if it helps bend. No long passive session.", "dose":"30-60 sec per target", "decision":"If unchanged, stop soft tissue. Do not chase tenderness."},
+      {"step":"B3. Mobility / Adj", "action":"Thoracic or TL impulse/mobilization if restriction links to marker. Avoid aggressive lumbar rotation.", "dose":"1-2 targets max", "decision":"Keep only if bend improves. No cavitation chasing."},
+      {"step":"B4. Reset", "action":"Hip hinge to high target. Cue ribs stacked, exhale, push hips back, reach green zone.", "dose":"4-6 reps", "decision":"If better, this is the lead home strategy. If worse, reduce range."},
+      {"step":"B5. Load", "action":"Minimal today. Supported sit-to-stand only if marker calms and knee screen is stable.", "dose":"1 x 5-6 max", "decision":"No floor lifting, no >10 lb lifting, no repeated bending until stable."}
+    ],
+    "avoid_today": ["No aggressive repeated flexion", "No heavy lifting", "No floor bending practice", "No long passive soft tissue", "No stacking extra regions because time is available"],
+    "secondary_handling": ["Left knee: screen effusion, extension loss, locking, giving way before loading", "Thoracic: supporting doorway only if it improves lumbar bend or breathing", "Early knee HEP only if safe: Quad Sets or Heel Slides with Knee Flexion"]
+  },
+  "page3": {
+    "subtitle": "Post-MVA lumbar bending case: calm threat, prove driver, build capacity",
+    "expert_read": ["Post-traumatic lumbar flexion-load sensitivity with guarding and work/lift intolerance", "Treat as moderate-high irritability until 24-hour response proves otherwise", "Do not let the knee complaint disappear without screening it"],
+    "retest_logic": ["Pass: bend farther, less sharp, less guarded, faster recovery, no distal spread", "Fail: same/worse after 1-2 logical inputs, more guarding, symptoms move down leg", "Decision: pass keeps lane; fail changes dose, marker, or safety screen"],
+    "lesson_rows": [
+      {"decision":"One complaint leads", "rule":"Low back leads today; upper back and knee are secondary screens", "why":"Keeps the visit from becoming three mini-plans"},
+      {"decision":"One marker leads", "rule":"Forward bend / raised reach is the truth test", "why":"No marker equals drift. Same marker decides"},
+      {"decision":"Manual is doorway", "rule":"Soft tissue, impulse, or mobility must improve bend", "why":"Prevents passive dependency and random care"},
+      {"decision":"Dose beats intensity", "rule":"Smaller range, fewer reps, more support", "why":"Most flares are dose errors"},
+      {"decision":"Capacity is the arc", "rule":"Raised hinge -> STS -> carries -> floor exposure", "why":"Pain relief is not the finish line"}
+    ],
+    "patient_script": "Your low back is very sensitive to bending load right now from the accident. That does not mean bending is bad forever. Today we are using your forward bend as the scoreboard, calming it, teaching a safer hinge, then rebuilding bending and lifting step by step.",
+    "doctor_close": "Today we are not trying to do everything. We are improving one marker safely. Your job is small, clean reps and no flare debt. If symptoms travel farther down the leg, weakness worsens, or the knee gives way, stop and tell us.",
+    "clinical_bottom_line": "Acute post-MVA bending pain is not a license to force mobility or prescribe exercise soup. Clear safety screen, one bend marker, one calming/control lane, immediate re-test, then progressive capacity when 24-hour response is stable."
+  }
+}
