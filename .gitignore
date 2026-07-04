@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+output/*.pdf
+output/*.html
+output/style_a3.css
+render/*.png
