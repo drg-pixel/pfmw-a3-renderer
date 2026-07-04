@@ -1,0 +1,38 @@
+@page { size: Letter landscape; margin: 0.34in; }
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #111827; }
+.page { page-break-after: always; height: 7.82in; position: relative; }
+.page:last-child { page-break-after: auto; }
+.header { border-bottom: 2px solid #111827; padding-bottom: 7px; margin-bottom: 8px; }
+.eyebrow { font-size: 8.5pt; letter-spacing: .05em; text-transform: uppercase; font-weight: 700; color: #4b5563; }
+.title { font-size: 18pt; line-height: 1.02; font-weight: 900; margin-top: 2px; }
+.subtitle { font-size: 9.5pt; margin-top: 3px; color: #374151; font-weight: 600; }
+.topgrid { display: grid; grid-template-columns: 1.15fr 1.15fr 1.15fr 1.2fr 1.2fr; gap: 7px; margin-bottom: 8px; }
+.info { border: 1.5px solid #9ca3af; border-radius: 7px; padding: 6px 7px; min-height: 48px; background: #f9fafb; }
+.label { font-size: 7.4pt; font-weight: 900; text-transform: uppercase; color: #6b7280; margin-bottom: 2px; }
+.info .value { font-size: 9.8pt; line-height: 1.13; font-weight: 700; }
+.matrix { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; }
+.matrix th { background: #111827; color: white; font-size: 7.8pt; line-height: 1.05; padding: 5px 3px; border-right: 1px solid #374151; text-align: center; }
+.matrix th.phasehead { width: 8.4%; }
+.matrix td.phase { width: 8.4%; background: #e5e7eb; font-size: 9.4pt; font-weight: 900; line-height: 1.08; text-align: center; vertical-align: middle; padding: 4px; border-left: 1.5px solid #6b7280; border-bottom: 1.5px solid #9ca3af; }
+.matrix td.cell { height: 116px; vertical-align: top; padding: 4px 4px 3px 4px; border-right: 1px solid #9ca3af; border-bottom: 1.5px solid #9ca3af; font-size: 7.3pt; line-height: 1.06; overflow: hidden; }
+.matrix tr:first-of-type td { border-top: 0; }
+.cell b { font-weight: 900; }
+.cell div { margin-bottom: 1.5px; }
+.hep { background: #fef3c7; }
+.note { margin-top: 7px; border-left: 5px solid #111827; background: #f3f4f6; padding: 5px 8px; font-size: 9pt; line-height: 1.16; font-weight: 700; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.box { border: 1.3px solid #9ca3af; border-radius: 8px; padding: 8px 9px; background: #f9fafb; margin-bottom: 8px; }
+.box h2 { margin: 0 0 5px 0; font-size: 11.2pt; line-height: 1.05; font-weight: 900; text-transform: uppercase; }
+.box p, .box li { font-size: 9pt; line-height: 1.22; margin: 0 0 4px 0; }
+ul { margin: 0; padding-left: 16px; }
+.protocol { width: 100%; border-collapse: collapse; table-layout: fixed; margin-top: 5px; }
+.protocol th { background: #111827; color: white; font-size: 8.5pt; padding: 5px; text-align: left; }
+.protocol td { border: 1px solid #9ca3af; vertical-align: top; padding: 5px; font-size: 8.6pt; line-height: 1.14; }
+.protocol .step { width: 12%; font-weight: 900; background: #f3f4f6; }
+.lesson { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.lesson th { background: #111827; color: white; font-size: 8.7pt; padding: 5px; text-align: left; }
+.lesson td { border: 1px solid #9ca3af; vertical-align: top; padding: 6px; font-size: 8.8pt; line-height: 1.17; }
+.script { border: 2px solid #111827; border-radius: 8px; padding: 8px 10px; margin-top: 8px; font-size: 9.5pt; line-height: 1.2; font-weight: 700; background: #ffffff; }
+.footer { position: absolute; bottom: 0; right: 0; font-size: 7.5pt; color: #6b7280; }
